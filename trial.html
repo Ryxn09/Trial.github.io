@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Propose Day</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  #message {
+    display: none;
+    font-size: 24px;
+    color: red;
+    margin-top: 20px;
+  }
+  #heart {
+    font-size: 48px;
+    color: red;
+  }
+</style>
+</head>
+<body>
+  <h1>Will you be my girlfriend?</h1>
+  <button id="yesBtn">Yes</button>
+  <button id="noBtn">No</button>
+  <div id="message"></div>
+  <div id="heart">&hearts;</div>
+
+<script>
+  document.getElementById("yesBtn").addEventListener("click", function() {
+    document.getElementById("message").innerText = "I wolf you ";
+    document.getElementById("message").style.display = "block";
+    document.getElementById("heart").style.display = "block";
+  });
+
+  document.getElementById("noBtn").addEventListener("click", function() {
+    alert("Please, give it a second thought. Will you be my girlfriend?");
+  });
+</script>
+</body>
+</html>
